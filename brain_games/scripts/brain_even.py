@@ -27,13 +27,13 @@ def main():
             count = 7
     if count == 3:
         print('Congratulations, ' + name + '!')
-    elif count == 5:    
+    elif count == 5:
         print(answer + " is wrong answer ;(. Correct answer was 'no'.Let's try again, " + str(name) + "!")
     elif count == 6:
         print(answer + " is wrong answer ;(. Correct answer was 'yes'.Let's try again, " + str(name) + "!")
     elif count == 7:
         print(answer + " is wrong answer ;(. Correct answer was 'yes' or 'no' .Let's try again, " + str(name) + "!")
-        
+
 
 if __name__ == '__main__':
     main()
