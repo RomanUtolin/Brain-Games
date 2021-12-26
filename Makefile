@@ -19,3 +19,6 @@ lint:
 
 brain-even:
 	poetry run brain-even
+	
+package-reinstall:
+	python3 -m pip install --user --force-reinstall  dist/*.whl
