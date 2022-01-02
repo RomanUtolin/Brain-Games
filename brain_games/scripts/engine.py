@@ -22,7 +22,7 @@ def question(task):
 
 
 def random_nubmers():
-    random_number = random.randrange(0, 101)
+    random_number = random.randrange(1, 101)
     return random_number
 
 
@@ -32,3 +32,14 @@ def random_operator():
     operators = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
     str_operator, int_operator = random.choice(operators)
     return str_operator, int_operator
+
+
+def divider(number_one, number_two):
+    global divider
+    while number_one != 0 and number_two != 0:
+        if number_one > number_two:
+            number_one = number_one % number_two
+        else:
+            number_two = number_two % number_one
+        modulo = number_one + number_two
+    return modulo

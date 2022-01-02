@@ -4,3 +4,4 @@
 [![make lint](https://github.com/RomanUtolin/python-project-lvl1/actions/workflows/makefile.yml/badge.svg)](https://github.com/RomanUtolin/python-project-lvl1/actions/workflows/makefile.yml)
 [![asciicast](https://asciinema.org/a/LKHsRuuXAb9XloE3hNTsLuor4.svg)](https://asciinema.org/a/LKHsRuuXAb9XloE3hNTsLuor4)
 [![asciicast](https://asciinema.org/a/458921.svg)](https://asciinema.org/a/458921)
+[![asciicast](https://asciinema.org/a/459504.svg)](https://asciinema.org/a/459504)

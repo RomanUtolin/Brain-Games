@@ -14,7 +14,7 @@ def main():
         if engine.answer == 'yes' and (task % 2) == 0:
             print('Correct!')
             count += 1
-        elif (engine.answer == 'no' and (task % 2) != 0):
+        elif engine.answer == 'no' and (task % 2) != 0:
             print('Correct!')
             count += 1
         elif engine.answer == 'yes' and (task % 2) != 0:
