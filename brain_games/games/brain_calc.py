@@ -9,14 +9,15 @@ def main():
     number_question = 3
     count = 0
     while count < number_question:
-        number_one = engine.random_nubmers()
-        number_two = engine.random_nubmers()
+        engine.random_numbers()
+        number_first = engine.random_number_from_50_to_100
+        number_last = engine.random_number_from_1_to_49
         engine.random_operator()
         operator_for_string = engine.str_operator
         operator_for_int = engine.int_operator
-        task = '{} {} {}'.format(number_one, operator_for_string, number_two)
+        task = '{} {} {}'.format(number_first, operator_for_string, number_last)
         engine.question(task)
-        correct_answer = str(operator_for_int(number_one, number_two))
+        correct_answer = str(operator_for_int(number_first, number_last))
         if engine.answer == correct_answer:
             print('Correct!')
             count += 1

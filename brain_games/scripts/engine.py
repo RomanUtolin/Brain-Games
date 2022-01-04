@@ -21,9 +21,22 @@ def question(task):
     return answer
 
 
-def random_nubmers():
-    random_number = random.randrange(1, 101)
-    return random_number
+def random_numbers():
+    global random_number_from_1_to_100
+    global random_number_from_1_to_49
+    global random_number_from_50_to_1000
+    global random_number_from_0_to_9
+    global random_number_fom_2_to_6
+    random_number_from_1_to_100 = random.randrange(1, 101)
+    random_number_from_1_to_49 = random.randrange(1, 50)
+    random_number_from_50_to_1000 = random.randrange(50, 1001)
+    random_number_from_0_to_9 = random.randrange(0, 10)
+    random_number_fom_2_to_6 = random.randrange(2, 7)
+    return random_number_from_0_to_9
+    return random_number_from_1_to_100
+    return random_number_from_1_to_49
+    return random_number_from_50_to_1000
+    return random_number_fom_2_to_6
 
 
 def random_operator():

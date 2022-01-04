@@ -9,7 +9,8 @@ def main():
     number_question = 3
     count = 0
     while count < number_question:
-        task = engine.random_nubmers()
+        engine.random_numbers()
+        task = engine.random_number_from_1_to_100
         engine.question(task)
         if engine.answer == 'yes' and (task % 2) == 0:
             print('Correct!')
