@@ -10,7 +10,7 @@ def main():
     count = 0
     while count < number_question:
         engine.random_numbers()
-        number_first = engine.random_number_from_50_to_100
+        number_first = engine.random_number_from_50_to_1000
         number_last = engine.random_number_from_1_to_49
         engine.random_operator()
         operator_for_string = engine.str_operator
