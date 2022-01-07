@@ -2,6 +2,7 @@
 import prompt
 import random
 import operator
+import math
 
 
 def welcome(task_text):
@@ -47,12 +48,14 @@ def random_operator():
     return str_operator, int_operator
 
 
-def divider(number_one, number_two):
-    global divider
-    while number_one != 0 and number_two != 0:
-        if number_one > number_two:
-            number_one = number_one % number_two
-        else:
-            number_two = number_two % number_one
-        modulo = number_one + number_two
-    return modulo
+def gcd(number_one, number_two):
+    return math.gcd(number_one, number_two)
+
+
+def is_prime(task):
+    diviser = 2
+    if task <= 1:
+        return False
+    while task % diviser != 0:
+        diviser += 1
+    return task == diviser
