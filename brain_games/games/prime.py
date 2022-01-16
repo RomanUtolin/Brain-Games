@@ -10,5 +10,5 @@ def game():
     global correct_answer
     task = random.randint(0, 999)
     correct_answer = 'yes' if engine.is_prime(task) else 'no'
-    return str(task)
+    return task
     return correct_answer
