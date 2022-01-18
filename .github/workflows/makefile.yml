@@ -1,20 +1,20 @@
 name: make lint
-on: push
-jobs:
-  my-job:
-    runs-on: ubuntu-latest  
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.9.7
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9.7
+on:
+  push:
+    jobs:
+      runs-on: ubuntu-latest  
+        steps:
+        - uses: actions/checkout@v2
+        - name: Set up Python 3.9.7
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.9.7
+
+          - name: install poetry
+            run: pip install --user poetry
     
-    - name: install poetry
-      run: pip install --user poetry
-    
-    - name: install flake8
-      run: python3 -m pip install flake8
+          - name: install flake8
+            run: python3 -m pip install flake8
       
-    - name: lint
-      run: make lint
+          - name: lint
+            run: make lint
