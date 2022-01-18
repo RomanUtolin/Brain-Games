@@ -1,19 +1,15 @@
-from brain_games import engine
 import random
+import operator
 
 
 DESCRIPTION = 'What is the result of the expression?'
 
 
 def game():
-    global task
-    global correct_answer
-    number_first = random.randint(50, 101)
-    number_last = random.randint(0, 49)
-    engine.random_operator()
-    operator_for_string = engine.str_operator
-    operator_for_int = engine.int_operator
-    task = f"{number_first} {operator_for_string} {number_last}"
-    correct_answer = str(operator_for_int(number_first, number_last))
-    return task
-    return correct_answer
+    num_1 = random.randint(50, 101)
+    num_2 = random.randint(0, 49)
+    operation = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
+    str_operator, int_operator = random.choice(operation)
+    question = f"{num_1} {str_operator} {num_2}"
+    correct_answer = str(int_operator(num_1, num_2))
+    return question, correct_answer
