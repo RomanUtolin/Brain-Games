@@ -1,8 +1,8 @@
-from prompt import string
+import prompt
 
 
 def welcome_user():
-    name = string('May I have your name? ')
-    if name == name:
-        greeting = 'Hello, ' + str(name) + '!'
-        print(greeting)
+    name = prompt.string('May I have your name? ')
+    greeting = f"Hello, {name}!"
+    print(greeting)
+    return name

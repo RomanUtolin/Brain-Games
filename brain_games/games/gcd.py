@@ -9,7 +9,7 @@ def game():
     num_2 = random.randint(0, 101)
     question = f"{num_1} {num_2}"
     correct_answer = _gcd(num_1, num_2)
-    return question, correct_answer
+    return question, str(correct_answer)
 
 
 def _gcd(num_1, num_2):
@@ -18,4 +18,4 @@ def _gcd(num_1, num_2):
             num_1 = num_1 % num_2
         else:
             num_2 = num_2 % num_1
-    return str(num_1 + num_2)
+    return num_1 + num_2

@@ -1,18 +1,18 @@
+from brain_games import cli
 import prompt
 
 
 ROUNDS = 3
+GREETING = 'Welcome to the Brain Games!'
 
 
 def run_game(game):
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    greeting = f"'Hello', {name}!"
-    print(greeting)
+    print(GREETING)
+    name = cli.welcome_user()
     print(game.DESCRIPTION)
     for _ in range(ROUNDS):
         question, correct_answer = game.game()
-        print("Question: " + str(question))
+        print(f"Question: {question}")
         answer = prompt.string('You answer: ')
         if answer != correct_answer:
             text = f"'{answer}' is wrong answer ;(. " \
@@ -22,4 +22,4 @@ def run_game(game):
             return
         else:
             print('Correct!')
-    print('Congratulations, ' + name + '!')
+    print(f"Congratulations, {name}!")
