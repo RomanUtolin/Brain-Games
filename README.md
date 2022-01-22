@@ -4,7 +4,9 @@
 [![make lint](https://github.com/RomanUtolin/python-project-lvl1/actions/workflows/my_lint.yml/badge.svg)](https://github.com/RomanUtolin/python-project-lvl1/actions/workflows/my_lint.yml)
 
 ###Brain Games
+
 Hello,This is Brain Games!
+
 To complete the game, you need to answer the questions!
 
 Brain-even
